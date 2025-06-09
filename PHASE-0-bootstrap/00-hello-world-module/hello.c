@@ -1,10 +1,13 @@
 #include <linux/init.h>
 #include <linux/kernel.h>
 #include <linux/module.h>
+#include <linux/printk.h>
 
 // Entry function : Runs when the module is loaded
 static int __init hello_init(void) {
   printk(KERN_INFO, "hello_world: Module loaded into kernel.\n");
+  printk(KERN_ALERT "hello_world: ALERT level testing.\n");
+	pr_info("hello_world: inside init\n");			
   return 0;
 }
 

@@ -1,0 +1,1 @@
+savedcmd_/home/azureuser/Kernel-X/PHASE-0-bootstrap/00-hello-world-module/hello.mod := printf '%s\n'   hello.o | awk '!x[$$0]++ { print("/home/azureuser/Kernel-X/PHASE-0-bootstrap/00-hello-world-module/"$$0) }' > /home/azureuser/Kernel-X/PHASE-0-bootstrap/00-hello-world-module/hello.mod
